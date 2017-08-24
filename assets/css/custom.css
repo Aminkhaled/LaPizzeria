@@ -6,6 +6,14 @@ html,*{
     -moz-box-sizing: border-box;
 }
 
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+
 h1{
     font-size: 48px;
 }
@@ -131,9 +139,9 @@ nav.site-nav ul li a{
     display: block;
     padding: 20px 0;
     text-decoration: none;
-    font-family: Arial,Helvetica;
+    font-family: 'Raleway', sans-serif;
     color: #000000;
-    font-weight: bold;
+    font-weight: 900;
     text-transform: uppercase;
     text-align: center;
 }
@@ -144,4 +152,42 @@ nav.site-nav ul li.current_page_item  a{
 }
 .mobile-menu .menu{
     display: none;
+}
+
+
+/*
+================
+ About Page
+================
+*/
+
+.hero{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 450px;
+    max-width: 100%;
+    padding-top:50px ;
+    display: table;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.hero:before{
+    position: absolute;
+    content: '';
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.5));
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .6;
+}
+.hero .hero-content{
+    color: white;
+    z-index: 2;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
 }

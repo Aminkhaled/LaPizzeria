@@ -6,6 +6,7 @@
  * Time: 2:14 PM
  */
 function lapizzera_style(){
+    wp_enqueue_style('googleFont','https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700,900',array(),1.0);
     wp_enqueue_style('normalize',get_template_directory_uri().'/assets/css/normalize.css',array(),7.0);
     wp_enqueue_style('style',get_template_directory_uri().'/assets/css/custom.css',array('normalize'),1.0);
     wp_enqueue_style('queries',get_template_directory_uri().'/assets/css/queries.css',array('style'),null);
@@ -27,3 +28,5 @@ function lapizzeria_menu(){
 
 add_action('init','lapizzeria_menu');
 
+
+add_theme_support('post-thumbnails');
