@@ -14,6 +14,7 @@ h1,h2,h3,h4,h5{
   font-weight: 900;
 }
 
+
 h1{
     font-size: 48px;
 }
@@ -38,7 +39,9 @@ h4{
     width: 100%;
     margin: 0 auto;
 }
-
+.text-center{
+    text-align: center;
+}
 .sr-text{
     display: none;
 }
@@ -190,4 +193,17 @@ nav.site-nav ul li.current_page_item  a{
     position: relative;
     display: table-cell;
     vertical-align: middle;
+}
+
+
+.main-content{
+    margin-top: -90px;
+    background-color: white;
+    position: relative;
+    padding: 40px;
+}
+
+.content-text p{
+    font-size: 18px;
+    line-height: 50px;
 }
