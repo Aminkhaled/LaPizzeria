@@ -49,7 +49,11 @@ wp_nav_menu($args_1);
 
 <div class="main-menu">
  <div class="container">
-     <div class="navigation">
+     <div class="mobile-menu">
+         <a href="#" class="menu"><i class="fa fa-bars"></i></a>
+     </div>
+<!--     mobile menu -->
+     <div class="navigation nav-hide">
          <?php
          $args = array(
              'theme_location'=> 'header-menu',

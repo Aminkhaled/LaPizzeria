@@ -112,9 +112,7 @@ nav.socials li a[href*="instagram.com"]:before{
 ===============
 */
 
-nav.site-nav{
-    
-}
+
 
 nav.site-nav ul{
     list-style: none;
@@ -143,4 +141,7 @@ nav.site-nav ul li a{
 nav.site-nav ul li.current_page_item  a{
     border-bottom: 6px solid #a61206;
     
+}
+.mobile-menu .menu{
+    display: none;
 }

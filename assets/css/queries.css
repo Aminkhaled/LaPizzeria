@@ -1,4 +1,41 @@
 /* media queries for repsonsive app */
+@media only screen and (max-width: 500px){
+    div.address p{
+        text-align: center;
+    }
+    .mobile-menu .menu{
+        display: block;
+    }
+    .mobile-menu {
+        text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #a61206;
+    }
+    .mobile-menu .menu i{
+        color: white;
+        margin-right: 15px;
+        border: 2px solid white;
+        padding: 8px;
+    }
+    
+    nav.site-nav ul{
+        text-align: center;
+    }
+    nav.site-nav ul li{
+        width: 100%;
+        display: inline-block;
+    }
+    /*.nav-hide{*/
+        /*display: none;*/
+    /*}*/
+    
+    
+ 
+    
+}
+
+
 @media only screen and (min-width: 768px) {
     div.logo{
         text-align: left;
@@ -21,6 +58,9 @@ display: block;
         font-size: 14px;
         text-align: center;
     }
+
+    
+    
     
 }
 
