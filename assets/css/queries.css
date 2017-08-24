@@ -1,0 +1,32 @@
+/* media queries for repsonsive app */
+@media only screen and (min-width: 768px) {
+    div.logo{
+        text-align: left;
+    }
+    header.site-header .container{
+        position: relative;
+    }
+    
+    .site-header .social-information{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    div.address{
+display: block;
+    clear: both;
+    padding-top: 10px;
+    }
+    div.address p{
+        font-size: 14px;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (min-width: 992px){
+    div.logo{
+        text-align: center;
+    }
+}
+

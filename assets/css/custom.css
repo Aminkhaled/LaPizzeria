@@ -1,0 +1,146 @@
+/*Public classes*/
+
+html,*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 28px;
+}
+h4{
+    font-size: 24px;
+}
+
+.clear,.clear:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sr-text{
+    display: none;
+}
+
+/*
+===================
+      Header
+===================
+*/
+
+header.site-header {
+    border-bottom: 1px solid #c1c1c1;
+    padding-bottom: 30px;
+    
+}
+
+
+header .logo{
+    text-align: center;
+}
+
+.site-header .logo .logo-img{
+    width: 250px;
+}
+
+/*
+================
+   Nav
+================
+*/
+
+nav.socials ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+nav.socials ul li{
+    display: inline-block;
+    padding-right: 15px;
+}
+nav.socials li a:before{
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 1px;
+    content:   '\f408';
+    font-size: 30px;
+    color: #000000;
+}
+nav.socials li a[href*="facebook.com"]::before{
+    content: '\f09a';
+    color: #3b5998;
+
+}
+
+nav.socials li a[href*="twitter.com"]:before{
+    content: '\f099';
+    color: #00aced;
+
+}
+nav.socials li a[href*="pinterest.com"]:before{
+    content: '\f0d2';
+    color: #cb2027;
+
+}
+nav.socials li a[href*="youtube.com"]:before{
+    content: '\f16a';
+    color: #bb0000;
+
+}
+nav.socials li a[href*="instagram.com"]:before{
+    content: '\f16d ';
+    color: #517fa4;
+}
+
+/*
+===============
+ Main Nav
+===============
+*/
+
+nav.site-nav{
+    
+}
+
+nav.site-nav ul{
+    list-style: none;
+    display: table;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav.site-nav ul li{
+    display: table-cell;
+    width: 1%;
+}
+
+nav.site-nav ul li a{
+    display: block;
+    padding: 20px 0;
+    text-decoration: none;
+    font-family: Arial,Helvetica;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav.site-nav ul li.current_page_item  a{
+    border-bottom: 6px solid #a61206;
+    
+}
