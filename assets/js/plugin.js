@@ -11,7 +11,8 @@ $(document).ready(function () {
     var breakPoint  = 500;
     
     $(window).resize(function () {
-       if($(document).width() < breakPoint){
+      
+        if($(document).width() < breakPoint){
            $('nav.site-nav').hide('slow');
 
        } else {
@@ -19,4 +20,15 @@ $(document).ready(function () {
 
        }
     });
+
+    var image =  $('.box-img');
+        var imageHeight = image[0].height();
+        var boxes = $('.box-content');
+        boxes.each(function (index,element) {
+            $(element).css({
+                'height': imageHeight +'px'
+            })
+        });
+   
 });
+

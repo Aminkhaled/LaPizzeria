@@ -26,12 +26,22 @@
         width: 100%;
         display: inline-block;
     }
-    /*.nav-hide{*/
-        /*display: none;*/
-    /*}*/
-    
-    
- 
+
+    .box-information  .box{
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+
+   
+    .box-information  .box:nth-child(2){
+        padding-bottom: 32px;
+    }
+
+    .box-information  .box:nth-child(3){
+        width: 100%;
+    }
+
     
 }
 
@@ -59,9 +69,10 @@ display: block;
         text-align: center;
     }
 
-    
-    
-    
+
+ 
+
+
 }
 
 @media only screen and (min-width: 992px){

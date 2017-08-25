@@ -207,3 +207,50 @@ nav.site-nav ul li.current_page_item  a{
     font-size: 18px;
     line-height: 50px;
 }
+
+
+/*
+==================
+    box-information
+==================
+*/
+.box-information{
+    padding: 40px 0;
+}
+
+.box-information .box{
+    width: 33.3333%;
+    float: left;
+    text-align: center;
+    color: white;
+}
+
+.box-information  .box img{
+    max-width: 100%;
+    -moz-transition: all 1s;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.box-information  .box img:hover{
+    transform: scale(1.2);
+    -webkit-transform:scale(1.2) ;
+    -moz-transform: scale(1.2);
+}
+.box-information .content-text h3{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.box-information  .box:nth-child(1){
+    background-color: #f19f30;
+}
+.box-information  .box:nth-child(2){
+    background-color: #127427;
+}
+.box-information  .box:nth-child(3){
+    background-color: #a61206;
+}
+.box-information  .box .content-text{
+    padding: 10px;
+ 
+}

@@ -22,12 +22,50 @@ if(have_posts()):
         <!--    main-text -->
 <div class="container box-information clear">
     <div class="box">
+        <?php
+        $image_id = get_field('image-1');
+        
+        $image_src = wp_get_attachment_image_src($image_id,'boxes');
+        
+        ?>
+        <img src="<?php echo $image_src[0];?>" alt="image" class="box-img">
         <div class="box-content">
-            
+        <?php echo the_field('description_1'); ?>    
         </div>
 <!--        box-content -->
     </div>
 <!--     box -->
+
+    <div class="box">
+ 
+        <?php
+        $image_id = get_field('image-2');
+
+        $image_src = wp_get_attachment_image_src($image_id,'boxes');
+
+        ?>
+        <img src="<?php echo $image_src[0];?>" alt="image" class="box-img">
+        <div class="box-content">
+            <?php echo the_field('description_2'); ?>
+        </div>
+        <!--        box-content -->
+    </div>
+    <!--     box -->
+
+    <div class="box">
+        <?php
+        $image_id = get_field('image-3');
+
+        $image_src = wp_get_attachment_image_src($image_id,'boxes');
+
+        ?>
+        <img src="<?php echo $image_src[0];?>" alt="image" class="box-img">
+        <div class="box-content">
+            <?php echo the_field('description_3'); ?>
+        </div>
+        <!--        box-content -->
+    </div>
+    <!--     box -->
 </div>
 <!--        box-information -->
         <?php
