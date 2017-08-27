@@ -20,15 +20,6 @@ $(document).ready(function () {
 
        }
     });
-
-    var image =  $('.box-img');
-        var imageHeight = image[0].height();
-        var boxes = $('.box-content');
-        boxes.each(function (index,element) {
-            $(element).css({
-                'height': imageHeight +'px'
-            })
-        });
-   
+    
 });
 
