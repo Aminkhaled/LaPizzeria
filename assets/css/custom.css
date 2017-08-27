@@ -254,3 +254,42 @@ nav.site-nav ul li.current_page_item  a{
     padding: 10px;
  
 }
+
+
+/*
+===========
+footer
+===========
+*/
+
+footer{
+    border-top: 1px solid #c1c1c1;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.footer-info{
+    text-align: center;
+}
+.footer-info ul {
+    list-style: none;
+    display: table;
+    width: 32%;
+    margin: 0 auto;
+}
+
+.footer-info ul li{
+    display: table-cell;
+}
+
+.footer-info ul li a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.footer-text{
+    font-size: 14px;
+}
