@@ -34,63 +34,54 @@ add_theme_support('post-thumbnails');
 
 add_image_size('boxes',437,291,true);
 
-
+add_image_size('special',637,300,true);
 /*
 * Creating a function to create our CPT
 */
 
 // Set UI labels for Custom Post Type
-function custom_post_type(){
+function lapizzeria_specialties() {
     $labels = array(
-        'name' => _x("pizza","pizza","lapizzeria"),
-        "singular_name"  => _x("pizza","pizza","lapizzeria"),
-        "menu_name" => __('Pizza',"lapizzeria"),
-        "parent_item_colon" => __("Pizza","lapizzeria"),
-        "all_items"=> __("All pizza types","lapizzeria"),
-        "view_item"=> __("View Pizza types","lapizzeria"),
-        "add_new_item"=> __("Add new type","lapizzeria"),
-        "add_new" => __("Add New","lapizzeria"),
-        "edit_item"=>__("Edit Pizaa type","lapizzeria"),
-        "update_item"=> __("update type","lapizzeria"),
-        "search_items"=> __("Search type","lapizzeria"),
-        'not_found'=> __('Not Found',"lapizzeria"),
-        "not_found_in_trash" => __("Not found in the trash","lapizzeria")
+        'name'               => _x( 'Pizza', 'lapizzeria' ),
+        'singular_name'      => _x( 'Pizza', 'post type singular name', 'lapizzeria' ),
+        'menu_name'          => _x( 'Pizza', 'admin menu', 'lapizzeria' ),
+        'name_admin_bar'     => _x( 'Pizza', 'add new on admin bar', 'lapizzeria' ),
+        'add_new'            => _x( 'Add New', 'book', 'lapizzeria' ),
+        'add_new_item'       => __( 'Add New Pizza', 'lapizzeria' ),
+        'new_item'           => __( 'New Pizzas', 'lapizzeria' ),
+        'edit_item'          => __( 'Edit Pizzas', 'lapizzeria' ),
+        'view_item'          => __( 'View Pizzas', 'lapizzeria' ),
+        'all_items'          => __( 'All Pizzas', 'lapizzeria' ),
+        'search_items'       => __( 'Search Pizzas', 'lapizzeria' ),
+        'parent_item_colon'  => __( 'Parent Pizzas:', 'lapizzeria' ),
+        'not_found'          => __( 'No Pizzas found.', 'lapizzeria' ),
+        'not_found_in_trash' => __( 'No Pizzas found in Trash.', 'lapizzeria' )
     );
-    $args = array(
-        'label' => __("pizza","lapizzeria"),
-        "description" => __("Movie news and review","lapizzeria"),
-        'labels' => $labels,
-        'supports'=> array('title','editor','author','thumbnail'),
-        'taxonomies' => array('category'),
-        /* A hierarchical CPT is like Pages and can have
-     * Parent and child items. A non-hierarchical CPT
-     * is like Posts.
-     */
-        'hierarchical'        => false,
-        'public'              => true,
-        'rewrite' => array('slug' => 'menu'),
-        'show_ui'             => true,
-        'show_in_menu'        => true,
-        'show_in_nav_menus'   => true,
-        'show_in_admin_bar'   => true,
-        'menu_position'       => 5,
-        'can_export'          => true,
-        'has_archive'         => true,
-        'exclude_from_search' => false,
-        'publicly_queryable'  => true,
-    );
-    // Registering your Custom Post Type
 
-    register_post_type("pizza",$args);
+    $args = array(
+        'labels'             => $labels,
+        'description'        => __( 'Description.', 'lapizzeria' ),
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => true,
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => 6,
+        'supports'           => array( 'title', 'editor', 'thumbnail' ),
+        'taxonomies'          => array( 'category' ),
+    );
+
+    register_post_type( 'pizza', $args );
+    flush_rewrite_rules();
+
 }
 
-add_action('init','custom_post_type',0);
+add_action( 'init', 'lapizzeria_specialties');
 
-//
-//add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
-//
-//function add_my_post_types_to_query( $query ) {
-//    if ( is_home() && $query->is_main_query() )
-//        $query->set( 'post_type', array( 'post', 'pizza' ) );
-//    return $query;
-//}
+
+
+

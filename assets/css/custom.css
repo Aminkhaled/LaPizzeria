@@ -13,7 +13,9 @@ h1,h2,h3,h4,h5{
     font-family: 'Raleway', sans-serif;
   font-weight: 900;
 }
-
+a{
+    text-decoration: none;
+}
 
 h1{
     font-size: 48px;
@@ -44,6 +46,37 @@ h4{
 }
 .sr-text{
     display: none;
+}
+.span-1{
+    width: 30%;
+    margin-left: 3.3335%;
+}
+
+.span-2{
+    width: 65%;
+    margin-left: 6.3335%;
+}
+
+
+.btn{
+    border-color: transparent;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-danger{
+    color: white;
+    background-color: #a61206;
+    font-family: sans-serif;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active{
+    background-color: #df2b1c;
 }
 
 /*
@@ -332,4 +365,59 @@ float: right;
     color: #828282;
     padding-top: 30px;
 
+}
+
+
+/*
+=================
+=================
+
+Blog page
+=================
+=================
+*/
+
+.entry-post{
+    padding-bottom: 25px;
+}
+
+.time{
+    width: 10%;
+    margin-top: 10px;
+    background-color: #f19f30;
+    padding: 15px;
+    float: left;
+}
+.time span{
+    display: block;
+    text-align: center;
+}
+
+.entry-post .entry-title h3{
+padding-left:15%;
+padding-top: 1%;
+    font-weight: 600;
+}
+
+.entry-post .entry-author h4{
+    padding-left: 15%;
+    font-weight: 600;
+    color: #505050;
+}
+
+.entry-post .entry-author span{
+    padding-right: 10px;
+    color: #f19f30;
+}
+
+.content-center .entry-title{
+    text-align: center;
+}
+.content-center .entry-author{
+    text-align: left;
+}
+
+.content-center .time{
+   margin: 0 auto;
+    
 }

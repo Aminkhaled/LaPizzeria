@@ -28,9 +28,7 @@ $image = wp_get_attachment_image_src($img,'full');
         ?>
         <div class="container">
             <article class="entry-post">
-                <a href="<?php  the_permalink() ?>">
                     <?php the_post_thumbnail() ?>
-                </a>
                 <!--         post image   -->
                 <div class="entry-title">
                     <div class="time">
@@ -39,6 +37,7 @@ $image = wp_get_attachment_image_src($img,'full');
                     </div>
                     <!--                time -->
                     <div class="title">
+                        
                         <h3><?php the_title() ?></h3>
                     </div>
                     <!--                title-->
