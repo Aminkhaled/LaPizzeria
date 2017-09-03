@@ -56,6 +56,8 @@ $image = wp_get_attachment_image_src($img,'full');
         </div>
         <!--        span-2 -->
         <!--         entry posts -->
+        <?php comment_form(); ?>
+
         <?php
     endwhile;
 

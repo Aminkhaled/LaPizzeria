@@ -23,10 +23,11 @@ $image = wp_get_attachment_image_src($img,'full');
         </div>
         <!--     hero -->
         <div class="main-content container">
-<?php
+            <div class="span span-2">
+
+            <?php
     while (have_posts()):the_post();
     ?>
-        <div class="span-2">
             <article class="entry-post">
                 <a href="<?php  the_permalink() ?>">
                     <?php the_post_thumbnail('special') ?>
@@ -60,14 +61,17 @@ $image = wp_get_attachment_image_src($img,'full');
                 </a>
                 <div class="clear"></div>
             </article>
-        </div>
 <!--        span-2 -->
 <!--         entry posts -->
     <?php
     endwhile;
 
-?>                
+?>
+            </div>
+
+            <?php get_sidebar() ?>
             <!--        content-text -->
+            <div class="clear"></div>
         </div>
         <!--    main-text -->
 
