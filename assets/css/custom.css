@@ -498,3 +498,38 @@ text-align: center;
     display: block;
    text-align: center;
 }
+
+/*
+comment
+*/
+ol.commentlist{
+    list-style: none;
+}
+ol.commentlist li{
+    background-color: #e1e1e1;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+ol.commentlist cite a{
+    color: #a61206;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.comment-meta a{
+    padding-top: 15px;
+    color: #a61206;
+}
+
+ul.children li{
+    list-style: none;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: white;
+}
+
+cite.fn{
+    color: #a61206;
+    font-weight: bold;
+}
