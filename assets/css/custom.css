@@ -533,3 +533,59 @@ cite.fn{
     color: #a61206;
     font-weight: bold;
 }
+
+/*
+==================
+==================
+
+Gallery page
+==================
+==================
+*/
+
+.gallery a img{
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+}
+.gallery a img:hover{
+    transform: scale(1.3);
+}
+
+/*
+=============
+=============
+
+Contact us
+=============
+=============
+*/
+
+.reservation{
+    background-image: url("../../img/bg_contact.jpg");
+    background-repeat: no-repeat;
+    background-position:top left ;
+}
+.reservation-info{
+    margin-left: 50%;
+}
+
+.reservation-info .field{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.reservation-info .field input,
+.reservation-info .field textarea{
+    width: 100%;
+    border: 3px solid #000000;
+    padding: 10px 22px;
+}
+.reservation-info .field textarea{
+    height: 200px;
+}
+
+.reservation-info::-webkit-input-placeholder,
+.reservation-info::-moz-placeholder{
+    color: black !important;
+}

@@ -20,6 +20,16 @@ $(document).ready(function () {
 
        }
     });
+   $(document).ready(function(){
+        $('.fluidbox-popup').fadeIn(1000).fluidbox({
+            immediateOpen: true
+        });
+    });
+//    for gallery
+    $(function () {
+            $('.gallery a ').attr({'data-lightbox':'roadtrip'});
+
+    })
     
 });
 
