@@ -7,6 +7,8 @@
  */
 require get_template_directory() . '/core/init.php';
 require get_template_directory()."/core/reservations.php";
+require get_template_directory()."/core/options.php";
+
 
 function lapizzera_style(){
     wp_enqueue_style('googleFont','https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700,900',array(),1.0);
