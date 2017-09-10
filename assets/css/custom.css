@@ -703,7 +703,28 @@ Front PAGE
 
 #front-gall{
     padding: 30px 0;
+   
 }
 #front-gall h2{
     color: #bb0000;
+}
+
+section.location-reservation{
+    background-image: url("../../img/bg_ingredients.jpg");
+    padding: 10px 0;
+    margin: 30px 0;
+    width: 100%;
+    height: 100%;
+}
+section.location-reservation h4{
+    color: white;
+}
+
+.location-reservation .main-content{
+    background-color: transparent;
+}
+
+.reservation-info{
+    padding: 40px 0;
+    margin: 0;
 }

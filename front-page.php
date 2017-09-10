@@ -9,6 +9,14 @@
 <?php
 get_header();
 ?>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+            height: 500px;
+        }
+ 
+    </style>
 <?php
 if(have_posts()):
     while (have_posts()):the_post();
@@ -108,5 +116,46 @@ endif;
 <!--        text-center -->
     </div>
 </section>
+<!--front gallery-->
 
-<?php get_footer(); ?>
+
+<section class="location-reservation">
+    <div class="container">
+        <div class="span span-1">
+            <div id="map">
+                map here
+            </div>
+        </div>
+<!--        col-2-2 -->
+        <div class="span span-2">
+         <div class="main-content ">
+                <main class=" text-center local-reservation" >
+                    <div class="reservation-info">
+                        <h4>Make a Reservation</h4>
+                        <?php get_template_part('template-reservation','form'); ?>
+                    </div>
+                    <!--                reservation info-->
+                </main>
+                <!--        content-text -->
+            </div>
+            <!--    main-text -->
+        </div>
+        <!--        col-2-2 -->
+    <div class="clear"></div>
+</section>
+    
+   
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9eg4EafXNBbUNaVgyDkufukaMhebAi38
+    &callback=initMap" async defer></script>
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: -34.397, lng: 150.644},
+                zoom: 8,
+            });
+        }
+
+    </script>
+   <?php get_footer(); ?>
