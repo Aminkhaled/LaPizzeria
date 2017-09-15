@@ -13,7 +13,7 @@ require get_template_directory()."/core/options.php";
 function lapizzera_style(){
     wp_enqueue_style('googleFont','https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700,900',array(),1.0);
     wp_enqueue_style('normalize',get_template_directory_uri().'/assets/css/normalize.css');
-    wp_enqueue_style('style',get_template_directory_uri().'/assets/css/custom.css');
+    wp_enqueue_style('style',get_template_directory_uri().'/assets/css/custom.css','','1.0.0');
     wp_enqueue_style('queries',get_template_directory_uri().'/assets/css/queries.css');
     wp_enqueue_style('font-awesome',get_template_directory_uri().'/assets/css/font-awesome.min.css');
     wp_enqueue_script('plugin_js',get_template_directory_uri().'/assets/js/plugin.js',array('jquery'),null,true);

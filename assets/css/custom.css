@@ -728,3 +728,7 @@ section.location-reservation h4{
     padding: 40px 0;
     margin: 0;
 }
+
+.hero-background{
+    background-image: url("../../img/min/about_02.jpg");
+}
